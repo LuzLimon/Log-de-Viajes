@@ -10,7 +10,6 @@ const NavHeader = (props) => {
   function changeLaguage(language) {
     console.log(language);
     i18n.changeLanguage(language);
-
   }
 
   if (props.location.pathname === '/mymap') {
@@ -19,7 +18,7 @@ const NavHeader = (props) => {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Link to="/" style={{ color: 'yellow' }} className="navbar-brand logo">
-        {t("traveldiaries")}
+        Log de Viajes
       </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
