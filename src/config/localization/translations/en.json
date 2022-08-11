@@ -8,5 +8,9 @@
     "signup": "Sign Up",
     "name": "Name",
     "emailaddress": "Email address",
-    "confirmpassword": "Confirm Password"
+    "confirmpassword": "Confirm Password",
+    "title": "Title",
+    "description": "Description",
+    "comments": "Comments",
+    "visitdate": "Visit Date"
 }

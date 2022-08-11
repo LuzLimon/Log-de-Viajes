@@ -8,5 +8,9 @@
     "signup": "Únete",
     "name": "Nombre",
     "emailaddress": "Dirección de correo electrónico",
-    "confirmpassword": "Confirmar contraseña"
+    "confirmpassword": "Confirmar contraseña",
+    "title": "Titulo",
+    "description": "Descripción",
+    "comments": "Comentarios",
+    "visitdate": "Fecha de la visita"
 }
