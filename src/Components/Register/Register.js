@@ -100,12 +100,6 @@ const Register = () => {
         <button type="submit" className="btn btn-primary btn-block">
           Sign Up
         </button>
-        <p className="forgot-password text-right">
-          Already registered?{' '}
-          <Link style={{ color: 'yellow' }} to="/login">
-            sign in
-          </Link>
-        </p>
       </form>
       <Footer />
     </>
