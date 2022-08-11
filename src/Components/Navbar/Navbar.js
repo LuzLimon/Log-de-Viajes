@@ -9,7 +9,6 @@ const NavHeader = (props) => {
   const { i18n, t } = useTranslation();
   function changeLaguage(language) {
     i18n.changeLanguage(language);
-
   }
 
   if (props.location.pathname === '/mymap') {

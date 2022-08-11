@@ -6,6 +6,7 @@ import { changeLanguage } from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 const Login = () => {
+
   const { i18n, t } = useTranslation();
   function changeLaguage(language) {
   i18n.changeLanguage(language);
@@ -47,10 +48,10 @@ const Login = () => {
   return (
     <>
       <form className="signForm" onSubmit={submitLogin}>
-        <h3>{t("signin")}</h3>
+      <h3>{t("signin")}</h3>
 
         <div className="form-group">
-          <label>{t("emailaddress")}</label>
+        <label>{t("emailaddress")}</label>
           <input
             type="email"
             name="email"
@@ -62,7 +63,7 @@ const Login = () => {
         </div>
 
         <div className="form-group">
-          <label>{t("password")}</label>
+        <label>{t("password")}</label>
           <input
             type="password"
             name="password"
@@ -80,9 +81,6 @@ const Login = () => {
               className="custom-control-input"
               id="customCheck1"
             />
-            <label className="custom-control-label" htmlFor="customCheck1">
-            {t("rememberme")}
-            </label>
           </div>
         </div>
 

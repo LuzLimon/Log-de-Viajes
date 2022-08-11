@@ -27,6 +27,7 @@ function History() {
         getLogs()
     }
         return (
+            <div>
             <table class="table table-success table-striped">
             <thead>
                 <tr>
@@ -52,6 +53,22 @@ function History() {
                 }
             </tbody>
             </table>
+                <div className='container'>
+                <form>
+                <h2>Travel Categories</h2>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Category title</label>
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" class="form-control"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+            </div>
+            
         );
     }
 
