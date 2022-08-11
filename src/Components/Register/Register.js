@@ -38,7 +38,7 @@ const Register = () => {
         })
           .then(() => {
             alert('Registration Successful');
-            history.push('/login');
+            history.push('/');
           })
           .catch((error) => {
             console.log('Error occured: ' + error);

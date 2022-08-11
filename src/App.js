@@ -7,7 +7,7 @@ import MyMap from './Components/Map/MyMap';
 import NotFound from './Components/NotFound/NotFound';
 import History from './Components/History/history';
 import { I18nextProvider } from "react-i18next";
-import i18n from "./config/localization/i18n";
+import i18n from './config/localization/i18n';
 import 'bootstrap/dist/css/bootstrap.min.css';
 require('dotenv').config();
 
@@ -25,6 +25,7 @@ const App = () => {
       </Switch>
     </Router>
     </I18nextProvider>
+ 
   );
 };
 

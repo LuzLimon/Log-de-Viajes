@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
-import { changeLanguage } from 'i18next';
+import { useTranslation } from "react-i18next";
 
 const NavHeader = (props) => {
 
   const { i18n, t } = useTranslation();
   
   function changeLaguage(language) {
-  i18n.changeLanguage(language);
+    console.log(language);
+    i18n.changeLanguage(language);
+
   }
 
   if (props.location.pathname === '/mymap') {
@@ -29,8 +30,12 @@ const NavHeader = (props) => {
           <Link to="/register" style={{ color: 'yellow' }} className="nav-link">
             {t("register")}
           </Link>
-          <button onClick={()=> { changeLanguage("en") }}>EN</button>
-          <button onClick={()=> { changeLanguage("es") }}>ES</button>
+          <button onClick={() => {
+                    changeLaguage("es");
+           }}>ES</button>
+          <button onClick={() => {
+                    changeLaguage("en");
+           }}>EN</button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
