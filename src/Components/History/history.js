@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState} from 'react';
-
+import { changeLanguage } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 import  { 
     listLogEntries,
@@ -7,6 +8,12 @@ import  {
 } from "../../API"
 
 function History() {
+
+    const { i18n, t } = useTranslation();
+  function changeLaguage(language) {
+  i18n.changeLanguage(language);
+  }
+    
     const [logsInfo, setLogs] = useState([]);
     
     useEffect(() => {

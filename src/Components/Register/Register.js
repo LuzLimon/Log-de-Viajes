@@ -2,8 +2,16 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory, Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
+import { changeLanguage } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const Register = () => {
+
+  const { i18n, t } = useTranslation();
+  function changeLaguage(language) {
+  i18n.changeLanguage(language);
+  }
+
   const history = useHistory();
   const [user, setUser] = useState({
     name: '',
