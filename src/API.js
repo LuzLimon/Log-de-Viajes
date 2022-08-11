@@ -16,3 +16,15 @@ export async function createLogEntry(entry) {
   });
   return response.json();
 }
+
+export async function hardDeleteTodo(id) {
+  try {
+    const response = await fetch(`${API_URL}/api/logs/${id}`, {
+      method: "DELETE",
+    });
+    return response.json();
+  } catch (error) {
+    console.log(error);
+  }
+}
+

@@ -5,6 +5,7 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import MyMap from './Components/Map/MyMap';
 import NotFound from './Components/NotFound/NotFound';
+import History from './Components/History/history';
 import { I18nextProvider } from "react-i18next";
 import i18n from "./config/localization/i18n";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/" exact component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/mymap" component={MyMap} />
+        <Route path="/history" component={History} />
         <Route path="*" component={NotFound} />
       </Switch>
     </Router>

@@ -2,19 +2,8 @@ import React, { useState } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import axios from 'axios';
 import Footer from '../Footer/Footer';
-import { useTranslation } from 'react-i18next';
-import { changeLanguage } from 'i18next';
 
 const Login = () => {
-
-  
-  const { i18n, t } = useTranslation();
-  
-  function changeLaguage(language) {
-  i18n.changeLanguage(language);
-  }
-
-
   const history = useHistory();
   const [user, setUser] = useState({
     email: '',
@@ -51,7 +40,7 @@ const Login = () => {
   return (
     <>
       <form className="signForm" onSubmit={submitLogin}>
-        <h3>{t("signin")}</h3>
+        <h3>Sign In </h3>
 
         <div className="form-group">
           <label>Email address</label>
@@ -77,10 +66,29 @@ const Login = () => {
           />
         </div>
 
+        <div className="form-group">
+          <div className="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              className="custom-control-input"
+              id="customCheck1"
+            />
+            <label className="custom-control-label" htmlFor="customCheck1">
+              Remember me
+            </label>
+          </div>
+        </div>
+
         <button type="submit" className="btn btn-primary btn-block">
           Login
         </button>
-        </form>
+        <p className="forgot-password text-right">
+          Don't have an account?{' '}
+          <Link style={{ color: 'yellow' }} to="/register">
+            Register here
+          </Link>
+        </p>
+      </form>
       <Footer />
     </>
   );
