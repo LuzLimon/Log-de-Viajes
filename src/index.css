@@ -1,13 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-image: linear-gradient(
+      rgba(36, 55, 80, 0.8),
+      rgba(76, 75, 80, 0.8)
+    ),
+    url('');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* map.js CSS */
+
+.marker {
+  transform: translate(-50%, -100%);
+}
+
+.error {
+  color: #f05305;
+}
+
+.marker.red path {
+  fill: #f05305;
+}
+
+.marker.yellow path {
+  fill: #faa803;
+  cursor: pointer;
+}
+
+.popup {
+  width: 20vw;
+  padding: 0.5rem;
+}
+
+.popup img {
+  height: 120px;
+  width: auto;
+  text-align: center;
+  margin-top: 0.7rem;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  outline: none;
+}
+.entry-form label {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
+}
+
+.entry-form input,
+.entry-form textarea,
+.entry-form button {
+  padding: 0.5rem 0;
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.entry-form input,
+.entry-form textarea {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.entry-form button {
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 1rem;
+}
+.entry-form button:hover,
+.delete:hover {
+  background-color: #03a9f4;
+  color: #fff;
+}
+.delete {
+  cursor: pointer;
+  margin: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* Login y Registro*/
+
+.signForm {
+  width: 35%;
+  margin: 3rem auto;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  height: 73vh;
+}
+.signForm h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.signForm input {
+  box-shadow: 3px 3px 5px rgba(10, 10, 10, 0.9);
+}
+.signForm input:hover {
+  box-shadow: 5px 2px 17px rgba(0, 0, 0, 0.7);
+}
+
+.signForm p {
+  margin-top: 0.3rem;
+}
+
+/* Navbar */
+
+.links {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+.logo {
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1104px) {
+  .signForm p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 925px) {
+  .popup img {
+    height: 55px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .signForm {
+    min-width: 50%;
+  }
+  .signForm p {
+    font-size: 10px;
+  }
+  .form-group label {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 447px) {
+  .signForm p {
+    font-size: 7px;
+  }
+  .popup img {
+    height: 30px;
+    width: auto;
+  }
+
+  footer p {
+    font-size: 11px;
+  }
+
+  .links {
+    font-size: 0.9rem;
+  }
 }
