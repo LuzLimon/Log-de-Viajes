@@ -1,0 +1,12 @@
+{
+    "traveldiaries": "TravelDiaries",
+    "login": "Login",
+    "register": "Register",
+    "signin": "Sign In",
+    "password": "Password",
+    "rememberme": "Remember me",
+    "signup": "Sign Up",
+    "name": "Name",
+    "emailaddress": "Email address",
+    "confirmpassword": "Confirm Password"
+}
