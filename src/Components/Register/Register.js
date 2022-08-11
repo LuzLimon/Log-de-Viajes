@@ -48,10 +48,10 @@ const Register = () => {
   return (
     <>
       <form className="signForm" onSubmit={submitHandler}>
-        <h3>Sign Up</h3>
+        <h3>{t("signup")}</h3>
 
         <div className="form-group">
-          <label>Name</label>
+          <label>{t("name")}</label>
           <input
             type="text"
             name="name"
@@ -63,7 +63,7 @@ const Register = () => {
         </div>
 
         <div className="form-group">
-          <label>Email address</label>
+          <label>{t("emailaddress")}</label>
           <input
             type="email"
             name="email"
@@ -75,7 +75,7 @@ const Register = () => {
         </div>
 
         <div className="form-group">
-          <label>Password</label>
+          <label>{t("password")}</label>
           <input
             type="password"
             name="password"
@@ -86,7 +86,7 @@ const Register = () => {
           />
         </div>
         <div className="form-group">
-          <label>Confirm Password</label>
+          <label>{t("confirmpassword")}</label>
           <input
             type="password"
             name="confirm_password"
@@ -98,7 +98,7 @@ const Register = () => {
         </div>
 
         <button type="submit" className="btn btn-primary btn-block">
-          Sign Up
+        {t("signup")}
         </button>
       </form>
       <Footer />

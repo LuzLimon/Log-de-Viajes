@@ -2,13 +2,12 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
+import { changeLanguage } from 'i18next';
 
 const NavHeader = (props) => {
 
   const { i18n, t } = useTranslation();
-  
   function changeLaguage(language) {
-    console.log(language);
     i18n.changeLanguage(language);
 
   }
@@ -19,7 +18,7 @@ const NavHeader = (props) => {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Link to="/" style={{ color: 'yellow' }} className="navbar-brand logo">
-        {t("traveldiaries")}
+        {t("travelog")}
       </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

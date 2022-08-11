@@ -30,10 +30,10 @@ function History() {
             <table class="table table-success table-striped">
             <thead>
                 <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Description</th>
-                <th scope="col">Comments</th>
-                <th scope="col">Visit Date</th>
+                <th scope="col">{t("title")}</th>
+                <th scope="col">{t("description")}</th>
+                <th scope="col">{t("comments")}</th>
+                <th scope="col">{t("visitdate")}</th>
                 </tr>
             </thead>
             <tbody>
